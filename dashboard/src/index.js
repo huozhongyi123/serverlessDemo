@@ -35,6 +35,9 @@ module.exports = new Vue({
       }
     }
   },
+  created() {
+    this.queryServer()
+  },
   methods: {
     async queryServer() {
       const response = await fetch(window.env.apiUrl)

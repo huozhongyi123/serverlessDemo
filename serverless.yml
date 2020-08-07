@@ -9,7 +9,7 @@ dashboard:
       hook: npm run build
     env:
       apiUrl: ${api.url}
-      apiUrlSZ: https://myapi.ihogu.com/public/?s=Whfy.city&city=%E6%B7%B1%E5%9C%B3
+      apiUrlSZ: https://myapi.ihogu.com/public/?s=Whfy.city&city=%E5%8C%97%E4%BA%AC
       # domain: www.serverlessmetrics.com # Insert your custom domain here
 
 api:

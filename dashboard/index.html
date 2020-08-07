@@ -16,32 +16,14 @@
   <body>
     <div id="root">
       <div class="container">
-        <!-- <a href="https://cloud.tencent.com/product/sf">
-          <img style="width: 500px;" src="./src/images/tencent-serverless-logo.png" alt="Tencent Serverless Logo" />      
-        </a>   
-        <div class="hero">
-          <img src="./src/images/hero.png" />
-        </div>
-
-        <div class="tagline">
-          a fullstack app built on serverless components via the serverless framework
-        </div>
-
-        <br>
-        <div class="chart-source-data-box">
-          <button v-on:click="queryServer">Get Server Time</button><br>
-          <div style="color: aliceblue;">{{ message }}</div>
-        </div> -->
-
-        <br>
         <div class="sls-div tagline">
           点击查询北京市疫情趋势图
         </div>
         <div class="chart-source-data-box">
-          <button @click="getPatient">Get Patients</button><br>
+          <button @click="getPatient">获取数据</button><br>
         </div>
         <div class="chart-wrapper">
-          <div class="chart-no-data" v-if="chartData.rows.length === 0">No Data</div>
+          <div class="chart-no-data" v-if="chartData.rows.length === 0">暂无数据</div>
           <ve-line class="chart" :data="chartData" :extend="extend" :settings="chartSettings" height="100%" v-if="chartData.rows.length > 0"/>
         </div>
       </div>

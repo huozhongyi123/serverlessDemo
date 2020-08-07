@@ -22,7 +22,7 @@ async function bootstrap() {
   await installDependencies(apiDir)
   console.log('Api dependencies installed success.')
   await installDependencies(dashboardDir)
-  console.log('Dashboard dependencies installed success.')
+  console.log('Dashboard dependencies installed success.\n')
   console.log('All dependencies installed.')
 }
 
